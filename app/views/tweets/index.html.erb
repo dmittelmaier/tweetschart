@@ -23,8 +23,7 @@
         name: 'Tweets',
         pointInterval: <%= @step * 1000 %>,
         pointStart: <%= @start_time * 1000 %>,
-        data: <%= (@start_time..DateTime.now.to_i).step(@step).each_cons(2).map { |period| 
-      Tweet.count_on(period[0], period[1]) }.to_a %>
+        data: <%= tweets_chart_series %>
         }]
     });
   });
