@@ -43,5 +43,6 @@ group :development, :test do
   gem 'spring'
   gem 'twitter'
   gem 'rufus-scheduler'
+  gem "highcharts-rails", "~> 3.0.0"
 end
 
